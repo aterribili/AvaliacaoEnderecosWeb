@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace AvaliadorEnderecosWeb
 {
-    class Bondfaro : Avaliacao
+    class Bondfaro : Site
     {
 
-        public string DescobreDominio()
+        public string Dominio()
         {
             return "http://www.bondfaro.com.br";
         }
 
-        public string DescobreParametro()
+        public string Parametro()
         {
             return "a";
         }
 
-        public string DescobreCookie()
+        public string Cookie()
         {
             return "ba";
         }

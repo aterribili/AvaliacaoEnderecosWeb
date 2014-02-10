@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace AvaliadorEnderecosWeb
 {
-    class Zmoveis : Avaliacao
+    class Zmoveis : Site
     {
-        public string DescobreDominio()
+        public string Dominio()
         {
             return "http://www.zmoveis.com.cl";
         }
 
-        public string DescobreParametro()
+        public string Parametro()
         {
             return "i";
         }
 
-        public string DescobreCookie()
+        public string Cookie()
         {
             return "zi";
         }

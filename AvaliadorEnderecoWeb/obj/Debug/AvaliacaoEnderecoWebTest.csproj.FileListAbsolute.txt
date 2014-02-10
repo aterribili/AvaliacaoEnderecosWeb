@@ -1,7 +1,7 @@
-c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecoWeb\obj\Debug\AvaliadorEnderecoWebTest.csprojResolveAssemblyReference.cache
 c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecoWeb\bin\Debug\AvaliadorEnderecoWeb.dll
 c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecoWeb\bin\Debug\AvaliadorEnderecoWeb.pdb
 c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecoWeb\bin\Debug\AvaliadorEnderecosWeb.exe
 c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecoWeb\bin\Debug\AvaliadorEnderecosWeb.pdb
+c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecoWeb\obj\Debug\AvaliacaoEnderecoWebTest.csprojResolveAssemblyReference.cache
 c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecoWeb\obj\Debug\AvaliadorEnderecoWeb.dll
 c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecoWeb\obj\Debug\AvaliadorEnderecoWeb.pdb

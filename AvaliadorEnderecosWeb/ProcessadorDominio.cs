@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace AvaliadorEnderecosWeb
 {
-    public class ProcessadorDominio
+    public class ProcessadorSite
     {
-        private readonly String nome;
+        private readonly String site;
 
-        public ProcessadorDominio(String nome)
+        public ProcessadorSite(String site)
         {
-            this.nome = nome;
+            this.site = site;
         }
 
-        public Avaliacao AvaliaDominio()
+        public Site AvaliaDominio()
         {
-            if (nome == "buscape")
+            if (site == "buscape")
                 return new Buscape();
-            if (nome == "bondfaro")
+            if (site == "bondfaro")
                 return new Bondfaro();
-            if (nome == "zmoveis")
+            if (site == "zmoveis")
                 return new Zmoveis();
             throw new Exception("Nao foram encontrados registros.");
         }

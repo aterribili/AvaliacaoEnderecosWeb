@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace AvaliadorEnderecosWeb
 {
-    class Program
+    public interface Site
     {
-        static void Main(string[] args)
-        {
-        }
+        String Dominio();
+
+        String Parametro();
+
+        String Cookie();
     }
 }

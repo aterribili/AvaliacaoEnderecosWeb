@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace AvaliadorEnderecosWeb
 {
-    class Buscape : Avaliacao
+    class Buscape : Site
     {
 
-        public string DescobreDominio()
+        public string Dominio()
         {
             return "http://www.buscape.com.br";
         }
 
-        public string DescobreParametro()
+        public string Parametro()
         {
             return "p";
         }
 
-        public string DescobreCookie()
+        public string Cookie()
         {
             return "bp";
         }
