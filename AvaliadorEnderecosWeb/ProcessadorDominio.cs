@@ -15,47 +15,15 @@ namespace AvaliadorEnderecosWeb
             this.nome = nome;
         }
 
-        public String DescobreDominio()
+        public Avaliacao AvaliaDominio()
         {
-            List<Avaliacao> listaAvaliadores = new List<Avaliacao>();
-            listaAvaliadores.Add(new AvaliadorBuscape(nome));
-            listaAvaliadores.Add(new AvaliadorBondfaro(nome));
-            listaAvaliadores.Add(new AvaliadorZmoveis(nome));
-
-            for (int i = 0; i < listaAvaliadores.Count; i++)
-                if (listaAvaliadores[i].Avalia())
-                    return listaAvaliadores[i].DescobreDominio();
-
-            return "";
+            if (nome == "buscape")
+                return new Buscape();
+            if (nome == "bondfaro")
+                return new Bondfaro();
+            if (nome == "zmoveis")
+                return new Zmoveis();
+            throw new Exception("Nao foram encontrados registros.");
         }
-
-        public String DescobreParametro()
-        {
-            List<Avaliacao> listaAvaliadores = new List<Avaliacao>();
-            listaAvaliadores.Add(new AvaliadorBuscape(nome));
-            listaAvaliadores.Add(new AvaliadorBondfaro(nome));
-            listaAvaliadores.Add(new AvaliadorZmoveis(nome));
-
-            for (int i = 0; i < listaAvaliadores.Count; i++)
-                if (listaAvaliadores[i].Avalia())
-                    return listaAvaliadores[i].DescobreParametro();
-
-            return "";
-        }
-
-        public String DescobreCookie()
-        {
-            List<Avaliacao> listaAvaliadores = new List<Avaliacao>();
-            listaAvaliadores.Add(new AvaliadorBuscape(nome));
-            listaAvaliadores.Add(new AvaliadorBondfaro(nome));
-            listaAvaliadores.Add(new AvaliadorZmoveis(nome));
-
-            for (int i = 0; i < listaAvaliadores.Count; i++)
-                if (listaAvaliadores[i].Avalia())
-                    return listaAvaliadores[i].DescobreCookie();
-
-            return "";
-        }
-
     }
 }

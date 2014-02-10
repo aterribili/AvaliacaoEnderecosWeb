@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace AvaliadorEnderecosWeb
 {
-    interface Avaliacao
+    public interface Avaliacao
     {
-        bool Avalia();
-
         String DescobreDominio();
 
         String DescobreParametro();

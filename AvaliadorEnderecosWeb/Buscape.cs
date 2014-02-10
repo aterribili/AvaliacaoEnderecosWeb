@@ -6,19 +6,8 @@ using System.Threading.Tasks;
 
 namespace AvaliadorEnderecosWeb
 {
-    class AvaliadorBuscape : Avaliacao
+    class Buscape : Avaliacao
     {
-        private readonly String nome;
-
-        public AvaliadorBuscape(String nome)
-        {
-            this.nome = nome;
-        }
-
-        public bool Avalia()
-        {
-            return nome == "buscape";
-        }
 
         public string DescobreDominio()
         {

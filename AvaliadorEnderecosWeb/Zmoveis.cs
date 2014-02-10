@@ -6,25 +6,12 @@ using System.Threading.Tasks;
 
 namespace AvaliadorEnderecosWeb
 {
-    class AvaliadorZmoveis : Avaliacao
+    class Zmoveis : Avaliacao
     {
-        private readonly String nome;
-
-        public AvaliadorZmoveis(String nome)
-        {
-            this.nome = nome;
-        }
-
-        public bool Avalia()
-        {
-            return nome == "zmoveis";
-        }
-
         public string DescobreDominio()
         {
             return "http://www.zmoveis.com.cl";
         }
-
 
         public string DescobreParametro()
         {

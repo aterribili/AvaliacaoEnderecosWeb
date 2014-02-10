@@ -6,19 +6,8 @@ using System.Threading.Tasks;
 
 namespace AvaliadorEnderecosWeb
 {
-    class AvaliadorBondfaro : Avaliacao
+    class Bondfaro : Avaliacao
     {
-        private readonly String nome;
-
-        public AvaliadorBondfaro(String nome)
-        {
-            this.nome = nome;
-        }
-
-        public bool Avalia()
-        {
-            return nome == "bondfaro";
-        }
 
         public string DescobreDominio()
         {

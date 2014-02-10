@@ -5,54 +5,54 @@ using AvaliadorEnderecosWeb;
 namespace AvaliadorEnderecoWeb
 {
     [TestClass]
-    public class UnitTest1
+    public class ProcessadorDominioTest
     {
         [TestMethod]
-        public void DeveRetornarBuscapeCasoSiteSejaBuscape()
+        public void DeveRetornarDominioBuscape()
         {
             ProcessadorDominio dominio = new ProcessadorDominio("buscape");
 
-            Assert.AreEqual("http://www.buscape.com.br", dominio.DescobreDominio());
+            Assert.AreEqual("http://www.buscape.com.br", dominio.AvaliaDominio().DescobreDominio());
         }
 
         [TestMethod]
-        public void DeveRetornarBondfaroCasoSiteSejaBondfaro()
+        public void DeveRetornarDominioBondfaro()
         {
             ProcessadorDominio dominio = new ProcessadorDominio("bondfaro");
 
-            Assert.AreEqual("http://www.bondfaro.com.br", dominio.DescobreDominio());
+            Assert.AreEqual("http://www.bondfaro.com.br", dominio.AvaliaDominio().DescobreDominio());
         }
 
         [TestMethod]
-        public void DeveRetornarZmoveisCasoSiteSejaZmoveis()
+        public void DeveRetornarDominioZmoveis()
         {
             ProcessadorDominio dominio = new ProcessadorDominio("zmoveis");
 
-            Assert.AreEqual("http://www.zmoveis.com.cl", dominio.DescobreDominio());
+            Assert.AreEqual("http://www.zmoveis.com.cl", dominio.AvaliaDominio().DescobreDominio());
         }
 
         [TestMethod]
-        public void DeveDescobrirNomeParametroBuscape()
+        public void DeveDescobrirParametroBuscape()
         {
             ProcessadorDominio dominio = new ProcessadorDominio("buscape");
 
-            Assert.AreEqual("p", dominio.DescobreParametro());
+            Assert.AreEqual("p", dominio.AvaliaDominio().DescobreParametro());
         }
 
         [TestMethod]
-        public void DeveDescobrirNomeParametroBondfaro()
+        public void DeveDescobrirParametroBondfaro()
         {
             ProcessadorDominio dominio = new ProcessadorDominio("bondfaro");
 
-            Assert.AreEqual("a", dominio.DescobreParametro());
+            Assert.AreEqual("a", dominio.AvaliaDominio().DescobreParametro());
         }
 
         [TestMethod]
-        public void DeveDescobrirNomeParametroZMoveis()
+        public void DeveDescobrirParametroZmoveis()
         {
             ProcessadorDominio dominio = new ProcessadorDominio("zmoveis");
 
-            Assert.AreEqual("i", dominio.DescobreParametro());
+            Assert.AreEqual("i", dominio.AvaliaDominio().DescobreParametro());
         }
 
         [TestMethod]
@@ -60,7 +60,7 @@ namespace AvaliadorEnderecoWeb
         {
             ProcessadorDominio dominio = new ProcessadorDominio("buscape");
 
-            Assert.AreEqual("bp", dominio.DescobreCookie());
+            Assert.AreEqual("bp", dominio.AvaliaDominio().DescobreCookie());
         }
 
         [TestMethod]
@@ -68,7 +68,7 @@ namespace AvaliadorEnderecoWeb
         {
             ProcessadorDominio dominio = new ProcessadorDominio("bondfaro");
 
-            Assert.AreEqual("ba", dominio.DescobreCookie());
+            Assert.AreEqual("ba", dominio.AvaliaDominio().DescobreCookie());
         }
 
         [TestMethod]
@@ -76,7 +76,7 @@ namespace AvaliadorEnderecoWeb
         {
             ProcessadorDominio dominio = new ProcessadorDominio("zmoveis");
 
-            Assert.AreEqual("zi", dominio.DescobreCookie());
+            Assert.AreEqual("zi", dominio.AvaliaDominio().DescobreCookie());
         }
     }
 }
