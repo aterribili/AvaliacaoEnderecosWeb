@@ -12,7 +12,7 @@ namespace AvaliadorEnderecoWeb
         {
             ProcessadorDominio dominio = new ProcessadorDominio("buscape");
 
-            Assert.AreEqual("http://www.buscape.com.br", dominio.ProcessarDominio());
+            Assert.AreEqual("http://www.buscape.com.br", dominio.DescobreDominio());
         }
 
         [TestMethod]
@@ -20,7 +20,7 @@ namespace AvaliadorEnderecoWeb
         {
             ProcessadorDominio dominio = new ProcessadorDominio("bondfaro");
 
-            Assert.AreEqual("http://www.bondfaro.com.br", dominio.ProcessarDominio());
+            Assert.AreEqual("http://www.bondfaro.com.br", dominio.DescobreDominio());
         }
 
         [TestMethod]
@@ -28,7 +28,7 @@ namespace AvaliadorEnderecoWeb
         {
             ProcessadorDominio dominio = new ProcessadorDominio("zmoveis");
 
-            Assert.AreEqual("http://www.zmoveis.com.cl", dominio.ProcessarDominio());
+            Assert.AreEqual("http://www.zmoveis.com.cl", dominio.DescobreDominio());
         }
     }
 }

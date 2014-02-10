@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Avaliacao.cs" />
+    <Compile Include="AvaliadorBondfaro.cs" />
+    <Compile Include="AvaliadorBuscape.cs" />
     <Compile Include="ProcessadorDominio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

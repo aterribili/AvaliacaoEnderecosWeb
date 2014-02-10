@@ -15,14 +15,14 @@ namespace AvaliadorEnderecosWeb
             this.nome = nome;
         }
 
-        public String ProcessarDominio()
+        public String DescobreDominio()
         {
-            if (nome == "buscape")
-                return "http://www.buscape.com.br";
-            if (nome == "bondfaro")
-                return "http://www.bondfaro.com.br";
-            if (nome == "zmoveis")
-                return "http://www.zmoveis.com.cl";
+            if (new AvaliadorBuscape(nome).Avalia())
+                return new AvaliadorBuscape(nome).Executa();
+            if (new AvaliadorBondfaro(nome).Avalia())
+                return new AvaliadorBondfaro(nome).Executa();
+            if (new AvaliadorZmoveis(nome).Avalia())
+                return new AvaliadorZmoveis(nome).Executa();
             else
                 return "";
         }
