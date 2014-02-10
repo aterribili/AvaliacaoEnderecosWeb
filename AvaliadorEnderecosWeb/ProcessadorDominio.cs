@@ -23,12 +23,39 @@ namespace AvaliadorEnderecosWeb
             listaAvaliadores.Add(new AvaliadorZmoveis(nome));
 
             for (int i = 0; i < listaAvaliadores.Count; i++)
-            {
                 if (listaAvaliadores[i].Avalia())
-                    return listaAvaliadores[i].Executa();
-            }
+                    return listaAvaliadores[i].DescobreDominio();
 
             return "";
         }
+
+        public String DescobreParametro()
+        {
+            List<Avaliacao> listaAvaliadores = new List<Avaliacao>();
+            listaAvaliadores.Add(new AvaliadorBuscape(nome));
+            listaAvaliadores.Add(new AvaliadorBondfaro(nome));
+            listaAvaliadores.Add(new AvaliadorZmoveis(nome));
+
+            for (int i = 0; i < listaAvaliadores.Count; i++)
+                if (listaAvaliadores[i].Avalia())
+                    return listaAvaliadores[i].DescobreParametro();
+
+            return "";
+        }
+
+        public String DescobreCookie()
+        {
+            List<Avaliacao> listaAvaliadores = new List<Avaliacao>();
+            listaAvaliadores.Add(new AvaliadorBuscape(nome));
+            listaAvaliadores.Add(new AvaliadorBondfaro(nome));
+            listaAvaliadores.Add(new AvaliadorZmoveis(nome));
+
+            for (int i = 0; i < listaAvaliadores.Count; i++)
+                if (listaAvaliadores[i].Avalia())
+                    return listaAvaliadores[i].DescobreCookie();
+
+            return "";
+        }
+
     }
 }

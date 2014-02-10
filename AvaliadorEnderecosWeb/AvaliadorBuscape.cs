@@ -20,9 +20,19 @@ namespace AvaliadorEnderecosWeb
             return nome == "buscape";
         }
 
-        public string Executa()
+        public string DescobreDominio()
         {
             return "http://www.buscape.com.br";
+        }
+
+        public string DescobreParametro()
+        {
+            return "p";
+        }
+
+        public string DescobreCookie()
+        {
+            return "bp";
         }
     }
 }

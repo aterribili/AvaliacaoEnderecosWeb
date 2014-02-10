@@ -3,3 +3,4 @@ c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEndereco
 c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecosWeb\bin\Debug\AvaliadorEnderecosWeb.pdb
 c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecosWeb\obj\Debug\AvaliadorEnderecosWeb.exe
 c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecosWeb\obj\Debug\AvaliadorEnderecosWeb.pdb
+c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecosWeb\obj\Debug\AvaliadorEnderecosWeb.csprojResolveAssemblyReference.cache

@@ -20,9 +20,20 @@ namespace AvaliadorEnderecosWeb
             return nome == "zmoveis";
         }
 
-        public string Executa()
+        public string DescobreDominio()
         {
             return "http://www.zmoveis.com.cl";
+        }
+
+
+        public string DescobreParametro()
+        {
+            return "i";
+        }
+
+        public string DescobreCookie()
+        {
+            return "zi";
         }
     }
 }

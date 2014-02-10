@@ -10,6 +10,10 @@ namespace AvaliadorEnderecosWeb
     {
         bool Avalia();
 
-        String Executa();
+        String DescobreDominio();
+
+        String DescobreParametro();
+
+        String DescobreCookie();
     }
 }

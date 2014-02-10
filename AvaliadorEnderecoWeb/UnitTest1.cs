@@ -54,5 +54,29 @@ namespace AvaliadorEnderecoWeb
 
             Assert.AreEqual("i", dominio.DescobreParametro());
         }
+
+        [TestMethod]
+        public void DeveDescobrirCookieBuscape()
+        {
+            ProcessadorDominio dominio = new ProcessadorDominio("buscape");
+
+            Assert.AreEqual("bp", dominio.DescobreCookie());
+        }
+
+        [TestMethod]
+        public void DeveDescobrirCookieBondfaro()
+        {
+            ProcessadorDominio dominio = new ProcessadorDominio("bondfaro");
+
+            Assert.AreEqual("ba", dominio.DescobreCookie());
+        }
+
+        [TestMethod]
+        public void DeveDescobrirCookieZmoveis()
+        {
+            ProcessadorDominio dominio = new ProcessadorDominio("zmoveis");
+
+            Assert.AreEqual("zi", dominio.DescobreCookie());
+        }
     }
 }

@@ -20,9 +20,19 @@ namespace AvaliadorEnderecosWeb
             return nome == "bondfaro";
         }
 
-        public string Executa()
+        public string DescobreDominio()
         {
             return "http://www.bondfaro.com.br";
+        }
+
+        public string DescobreParametro()
+        {
+            return "a";
+        }
+
+        public string DescobreCookie()
+        {
+            return "ba";
         }
     }
 }
