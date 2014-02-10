@@ -1,0 +1,5 @@
+c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecosWeb\bin\Debug\AvaliadorEnderecosWeb.exe.config
+c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecosWeb\bin\Debug\AvaliadorEnderecosWeb.exe
+c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecosWeb\bin\Debug\AvaliadorEnderecosWeb.pdb
+c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecosWeb\obj\Debug\AvaliadorEnderecosWeb.exe
+c:\users\abner.terribili\documents\visual studio 2013\Projects\AvaliadorEnderecoWeb\AvaliadorEnderecosWeb\obj\Debug\AvaliadorEnderecosWeb.pdb
