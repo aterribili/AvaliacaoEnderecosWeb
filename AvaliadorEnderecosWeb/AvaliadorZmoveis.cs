@@ -22,7 +22,7 @@ namespace AvaliadorEnderecosWeb
 
         public string Executa()
         {
-            return "http://www.zmoveis.com.br";
+            return "http://www.zmoveis.com.cl";
         }
     }
 }

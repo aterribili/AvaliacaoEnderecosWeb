@@ -17,14 +17,18 @@ namespace AvaliadorEnderecosWeb
 
         public String DescobreDominio()
         {
-            if (new AvaliadorBuscape(nome).Avalia())
-                return new AvaliadorBuscape(nome).Executa();
-            if (new AvaliadorBondfaro(nome).Avalia())
-                return new AvaliadorBondfaro(nome).Executa();
-            if (new AvaliadorZmoveis(nome).Avalia())
-                return new AvaliadorZmoveis(nome).Executa();
-            else
-                return "";
+            List<Avaliacao> listaAvaliadores = new List<Avaliacao>();
+            listaAvaliadores.Add(new AvaliadorBuscape(nome));
+            listaAvaliadores.Add(new AvaliadorBondfaro(nome));
+            listaAvaliadores.Add(new AvaliadorZmoveis(nome));
+
+            for (int i = 0; i < listaAvaliadores.Count; i++)
+            {
+                if (listaAvaliadores[i].Avalia())
+                    return listaAvaliadores[i].Executa();
+            }
+
+            return "";
         }
     }
 }
